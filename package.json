@@ -1,0 +1,15 @@
+{
+  "name": "concept-videos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generate_ppts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pptxgenjs": "^4.0.1"
+  }
+}
