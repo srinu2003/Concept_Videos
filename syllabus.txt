@@ -1,0 +1,466 @@
+MATHEMATICAL FOUNDATIONS OF COMPUTER SCIENCE (PC-I)
+M.Tech CSE I Year I Sem. LTP C
+300 3
+Pre-requisites: An understanding of Math in general issufficient.
+Course Objectives: To learn
+1. Introducesthe elementary discretemathematicsfor computerscience and engineering.
+2. Topics include formal logic notation, methods of proof, induction, sets, relations, graph
+theory, permutations and combinations, counting principles; recurrence relations and
+generating functions.
+CourseOutcomes: After learning the contents of this paper the student must be able to
+1. Apply the principles of propositional and predicate logic to solve problems in computer science
+and engineering domains.
+2. Analyse set-theoretic structures, relations, and functions to establish mathematical foundations
+for advanced algorithms and computational models in real world scenarios.
+3. Make Use of mathematical induction,recursion, and program verification techniques in terms of
+complexity and correctness for the challenging algorithms.
+4. Utilize Bayes’theorem, and advanced counting techniques to optimize combinatorial problems
+of the problems in multidisciplinary domains.
+5. Create mathematical models using recurrence relations, generating functions, and graphtheoretic techniques to solve real-world research-oriented problems.
+UNIT-I
+The Foundations Logic and Proofs: Propositional Logic, Applications of Propositional Logic,
+Propositional Equivalence, Predicates and Quantifiers, Nested Quantifiers, Rules of Inference,
+Introduction to Proofs, Proof Methods and Strategy.
+UNIT-II
+Basic Structures, Sets, Functions, Sequences, Sums, Matrices and Relations: Sets, Functions,
+Sequences & Summations, Cardinality of Sets and Matrices Relations, Relations and Their Properties,
+n-ary Relations and Their Applications, Representing Relations, Closures of Relations, Equivalence
+Relations, Partial Orderings.
+UNIT-III
+Algorithms, Induction and Recursion: Algorithms, The Growth of Functions, Complexity of Algorithms.
+Induction and Recursion: Mathematical Induction, Strong Induction and Well-Ordering, Recursive
+Definitions and Structural Induction, Recursive Algorithms, Program Correctness.
+UNIT-IV
+Discrete Probability and Advanced Counting Techniques:
+An Introduction to Discrete Probability. Probability Theory, Bayes’ Theorem, Expected Value and
+Variance. Advanced Counting Techniques:
+Recurrence Relations, Solving Linear Recurrence Relations, Divide-and-Conquer Algorithms and
+Recurrence Relations, Generating Functions, Inclusion-Exclusion, Applications of Inclusion-Exclusion.
+UNIT-V
+Graphs: Graphs and Graph Models, Graph Terminology and Special Types of Graphs, Representing
+Graphs and Graph Isomorphism, Connectivity, Euler and Hamilton Paths, Shortest-Path Problems,
+Planar Graphs, Graph Coloring.
+Trees: Introduction to Trees, Applications of Trees, Tree Traversal, Spanning Trees, Minimum
+Spanning Trees.
+Department of Computer Science and Engineering
+Marri Laxman Reddy Institute of Technology and Management-UGC Autonomous
+TEXT BOOKS:
+1. Discrete Mathematical Structures with Applications to Computer Science: J.P. Tremblay,
+R. Manohar, McGraw-hill, 1
+st ed.
+2. Discrete Mathematics for Computer Scientists & Mathematicians: Joe l. Mott, Abraham
+Kandel, Teodore P. Baker, Prentis Hall of India, 2nd ed.
+REFERENCE:
+1. Discrete and Combinatorial Mathematics - an applied introduction: Ralph.P. Grimald,
+Pearson education, 5th edition.
+2. Discrete Mathematical Structures: Thomas Kosy, Tata McGraw Hill publishing co.
+ADVANCED DATA STRUCTURES (PC-II)
+M.Tech CSE I Year I Sem. L T P C
+3 0 0 3
+Prerequisites
+1. A course on “Data Structures”.
+Course Objectives
+1. Introduces the heap data structures such as leftist trees, binomial heaps, Fibonacci and
+min- max heaps.
+2. Introduces a variety of data structures such as disjoint sets, hash tables,search structures
+and digital search structures.
+Course Outcomes
+1. Apply heap and hashing techniques for efficient data organization and retrieval in real-world
+applications of databases and memory management.
+2. Analyze balanced and multiway search trees for dynamic searching operations in
+multidisciplinary domains of network routing and AI-based search systems.
+3. Implement digital search structures such as tries and suffix trees forsoftware engineering and
+compiler design.
+4. Evaluate collision resolution strategies and hashing methods for research in cryptography and
+distributed systems.
+5. Design efficient pattern-matching solutions using classical and advanced algorithms for industry
+applications in cybersecurity and text analytics.
+UNIT - I
+Heap Structures
+Introduction, Min-Max Heaps, Leftist trees, Binomial Heaps, Fibonacci heaps.
+UNIT - II
+Hashing and Collisions
+Introduction, Hash Tables, Hash Functions, different Hash Functions:- Division Method, Multiplication
+Method, Mid-Square Method, Folding Method, Collisions
+UNIT - III
+Search Structures: OBST, AVL trees, Red-Black trees, Splay trees,Multiway Search Trees,B-trees, 2-3 trees
+UNIT - IV
+Digital Search Structures,Digital Search trees, Binary tries and Patricia, Multiway Tries, Suffix trees,
+Standard Tries, Compressed Tries
+UNIT - V
+Patternmatching,Introduction, Brute force, the Boyer –Moore algorithm, Knuth-Morris-Pratt algorithm,
+Naïve String, Harspool, Rabin Karp
+TEXT BOOKS:
+1. Fundamentals of data structuresin C++ Sahni,Horowitz, Mehatha, Universities Press.
+2. Introduction to Algorithms, TH Cormen, PHI
+REFERENCES:
+1. Design methods and analysis of Algorithms, SK Basu, PHI.
+2. Data Structures &Algorithm Analysisin C++, Mark Allen Weiss, Pearson Education.
+3. Fundamentals of Computer Algorithms, 2
+nd Edition, Ellis Horowitz, Sartaj
+Sahni, Sanguthevar Rajasekaran, Universities Press.
+Department of Computer Science and Engineering
+Marri Laxman Reddy Institute of Technology and Management-UGC Autonomous
+DATABASE PROGRAMMING WITH PL/SQL (PROFESSIONAL ELECTIVE - I)
+M.Tech CSE I Year I Sem. L T P C
+3 0 0 3
+Course Objectives:
+1. Knowledge on significance of SQL fundamentals.
+2. Evaluate functions and triggers of PL/SQL
+3. Knowledge on controlstructures, packagesin PL/SQL and its applications
+Course Outcomes:
+1. Apply PL/SQL block structures, variables, control statements, and exception handling to solve
+problems.
+2. Design collections and bulk operations for efficient data processing in e-commerce
+transactions.
+3. Develop functions and procedures with proper transaction handling and parameter passing
+business logic modules of ERP systems.
+4. Construct and manage PL/SQL packages with appropriate definer, invoker rights for
+components of inventory, payroll systems.
+5. Make use of triggers to automate database events for auditing financial transactions and
+enforcing data integrity in databases.
+Unit I
+PL/SQL Basics
+Block Structure, Behavior of Variables in Blocks, Basic Scalar and Composite Data Types, Control
+Structures, Exceptions, Bulk Operations, Functions, Procedures, and Packages, Transaction Scope
+Unit II
+Language Fundamentals & Control Structures
+Lexical Units, Variables and Data Types, Conditional Statements, Iterative Statements, Cursor
+Structures, Bulk Statements, Introduction to Collections, Object Types: Varray and Table Collections,
+Associative Arrays, Oracle Collection API
+Unit III
+Functions and Procedures
+Function and Procedure Architecture, Transaction Scope, Calling Subroutines, Positional Notation,
+Named Notation, Mixed Notation, Exclusionary Notation, SQL Call Notation, Functions, Function
+Model Choices, Creation Options, Pass-by-Value Functions, Pass-by-Reference Functions, Procedures,
+Pass-by-Value Procedures, Pass-by-Reference Procedures, Supporting Scripts.
+Unit IV
+Packages
+Package Architecture, Package Specification, Prototype Features, Serially Reusable Precompiler
+Directive, Variables, Types, Components: Functions and Procedures, Package Body, Prototype
+Features, Variables, Types, Components: Functions and Procedures, Definer vs. Invoker Rights
+Mechanics, Managing Packages in the Database Catalog, Finding, Validating, and Describing
+Packages, Checking Dependencies, Comparing Validation Methods: Timestamp vs. Signature.
+Unit V
+Triggers
+Introduction to Triggers, Database Trigger Architecture, Data Definition Language Triggers, Event
+Attribute Functions, Building DDL Triggers, Data Manipulation Language Triggers, Statement-Level
+Triggers, Row-Level Triggers, Compound Triggers, INSTEAD OF Triggers, System and Database Event
+Triggers, Trigger Restrictions, Maximum Trigger Size, SQL Statements, LONG and LONG RAW Data
+Types.
+Department of Computer Science and Engineering
+Marri Laxman Reddy Institute of Technology and Management-UGC Autonomous
+TEXT BOOKS:
+1. Oracle Database 12c PL/SQL Programming Michael McLaughlin, McGraw Hill Education.
+REFERENCES:
+1. Benjamin Rosenzweig, Elena Silvestrova Rakhimov, Oracle PL/SQL by example Fifth Edition.
+2. Dr. P. S. Deshpande, SQL &PL / SQL for Oracle 11g Black Book.
+SOFTWARE QUALITY ENGINEERING (PROFESSIONAL ELECTIVE - II)
+M.Tech CSE I Year I Sem. L T P C
+3 0 0 3
+Course Objectives:
+Knowledge on significance of Quality, quality assurance, quality engineering.
+CourseOutcomes:
+Unit I Software Quality
+Quality: perspectives and expectations, Quality frameworks and ISO-9126, correctness and defects:
+Definitions, properties and Measurements, A historical perspective of quality, software quality.
+Unit II Quality Assurance
+Classification: QA as dealing with defects, Defect prevention- Education and training, Formal method,
+Other defect prevention techniques, Defect Reduction - Inspection: Direct fault detection and
+removal, Testing: Failure observation and fault removal, other techniques and risk identification,
+Defect Containment- software fault tolerance, safety assurance and failure containment
+Unit III Quality Engineering
+Quality Engineering: Activities and process, Quality planning: Goal setting and Strategy formation,
+Quality assessment and Improvement, Quality engineering in software process.
+UnitIV Test Activities, Management and Automation
+Test planning and preparation, Test execution, Result checking and measurement, Analysis and
+follow- up, Activities People and Management, Test Automation.
+Unit V Coverage and usage testing based on checklist and partitions
+Checklist based testing and its limitations, Testing for partition Coverage, Usage based Statistical
+testing with Musa’s operational profiles, Constructing operational profiles
+Case Study: OP forthe cartridge Support Software
+TEXT BOOKS:
+1. Jeff Tian, Software Quality Engineering, Testing, Quality Assurance, and
+Quantifiable improvement
+2. Richard N. Taylor, Software Architecture: Foundations, Theory, and Practice
+RESEARCH METHODOLOGY & IPR
+M.Tech CSE I Year I Sem. L T P C
+2 0 0 2
+Prerequisite: None
+CourseObjectives:
+1. To understand the research problem
+2. To know the literature studies, plagiarism and ethics
+3. To get the knowledge abouttechnical writing
+4. To analyze the nature of intellectual property rights and new developments
+5. To know the patent rights
+Course Outcomes: Atthe end of this course,students will be able to
+1. Identify research problems using systematic approachesto data collection, analysis, and
+instrumentation forsolving real-world challengesin science and engineering.
+2. Analyze literature effectively while adhering to researchethicstosupport academicwriting and
+plagiarism-free publications.
+3. Developstructured research proposals and technicalreportsfor applicationsin academic
+presentations, project funding, and professional communication.
+4. Examine intellectual property systems,including patents, copyrights, and designs,to apply themin
+innovation protection and technology commercialization.
+5. Evaluate case studies onemerging IPRissuessuchas biologicalsystems,software, and traditional
+knowledge to support entrepreneurship and multidisciplinary research.
+UNIT-I
+Meaning of research problem, Sources of research problem, Criteria Characteristics of a good
+research problem, Errors in selecting a research problem, Scope and objectives of research problem.
+Approaches of investigation of solutions for research problem, data collection, analysis, interpretation,
+Necessary instrumentations
+UNIT-II
+Effective literature studies approaches, analysis, Plagiarism, Research ethics
+UNIT-III
+Effective technical writing, how to write report, Paper Developing a Research Proposal, Format of
+research proposal, a presentation and assessment by a review committee
+UNIT-IV
+Nature of Intellectual Property: Patents, Designs, Trade and Copyright. Process of Patenting and
+Development: technological research, innovation, patenting, development. International Scenario:
+International cooperation on Intellectual Property. Procedure for grants of patents, Patenting under
+PCT.
+UNIT-V
+Patent Rights: Scope of Patent Rights. Licensing and transfer of technology. Patentinformation
+and databases. Geographical Indications. New Developments in IPR: Administration of Patent
+System. New developments in IPR; IPR of Biological Systems, Computer Software etc. Traditional
+knowledge Case Studies, IPR and IITs.
+Department of Computer Science and Engineering
+Marri Laxman Reddy Institute of Technology and Management-UGC Autonomous
+TEXT BOOKS:
+1. Stuart Melville and Wayne Goddard, “Research methodology: an introduction for science
+& engineering students”
+2. C.R. Kothari, Research Methodology, methods & techniques, 2nd edition, New age
+International publishers
+REFERENCES:
+1. Ranjit Kumar, 2nd Edition, “Research Methodology: A Step by Step Guide for beginners”
+2. Halbert, “Resisting Intellectual Property”, Taylor &Francis Ltd ,2007.
+3. Mayall, “Industrial Design”, McGraw Hill, 1992.
+4. Niebel, “Product Design”, McGraw Hill, 1974.
+5. Asimov, “Introduction to Design”, Prentice Hall, 1962.
+6. Robert P. Merges, Peter S. Menell, Mark A. Lemley, “Intellectual Property in
+New Technological Age”, 2016.
+7. T. Ramappa, “Intellectual Property Rights Under WTO”, S. Chand, 2008.
+--------------------------------------------------------------------------
+ADVANCED ALGORITHMS (PC - III)
+M.Tech CSE I Year II Sem. L T P C
+3 0 0 3
+Pre-Requisites: UG level course in Algorithm Design and Analysis
+Course Objectives:
+1. Introduce studentsto the advancedmethods of designing and analyzing algorithms.
+2. The student should be able to choose appropriate algorithms and use it for a
+specific problem.
+3. To familiarize students with basic paradigms and data structures used to solve
+advanced algorithmic problems.
+4. Students should be able to understand different classes of problems concerning
+their computation difficulties.
+5. To introduce the students to recent developmentsin the area of algorithmic design.
+CourseOutcomes: After completion of course,students would be able to:
+1. Apply sorting, graph traversal, and shortest path algorithms to solve optimization problems in
+networks and real-time systems.
+2. Analyze matroids, greedy algorithms, and graph matching techniques for applications in resource
+allocation and scheduling.
+3. Implement flow networks, matrix computations, and divide-and-conquerstrategies for solving
+large-scale scientific and engineering problems.
+4. Evaluate dynamic programming, modular arithmetic, and fast polynomial/DFT algorithms for
+secure communications and cryptography.
+5. Design solutions for NP-complete problems using advanced paradigms and recent data
+structures to support multidisciplinary research.
+UNIT – I
+Sorting:
+Review of varioussorting algorithms,topologicalsorting
+Graph:
+Definitions and Elementary Algorithms: Shortest path by BFS, shortest path in edge-weighted case
+(Dijkstra's), depth-first search and computation of strongly connected components, emphasis on
+correctness proof of the algorithm and time/space analysis, example of amortized analysis.
+UNIT – II
+Matroids:
+Introduction to greedy paradigm, algorithm to compute a maximum weight maximal independent
+set. Application to MST.
+Graph Matching:
+Algorithm to compute maximum matching. Characterization of maximum matching by augmenting
+paths, Edmond's Blossom algorithm to compute augmenting path.
+UNIT - III
+Flow-Networks:
+Maxflow-mincut theorem, Ford-Fulkerson Method to compute maximum flow, Edmond-Karp
+maximum-flow algorithm.
+Matrix Computations:
+Strassen's algorithm and introduction to divide and conquer paradigm, inverse of a triangular matrix,
+relation between the time complexities of basic matrix operations, LUP-decomposition.
+Department of Computer Science and Engineering
+Marri Laxman Reddy Institute of Technology and Management-UGC Autonomous
+UNIT - IV
+Shortest Path in Graphs:
+Floyd-Warshall algorithm and introduction to dynamic programming paradigm. More examples of
+dynamic programming.
+Modulo Representation of integers/polynomials:
+Chinese Remainder Theorem, Conversion between base-representation and modulo-representation.
+Extension to polynomials. Application: Interpolation problem.
+Discrete Fourier Transform (DFT):
+In complex field, DFT in modulo ring. Fast Fourier Transform algorithm. Schonhage-Strassen Integer
+Multiplication algorithm.
+UNIT - V
+Linear Programming: Geometry of the feasibility region and Simplex algorithm
+NP-completeness: Examples, proof of NP-hardness and NP-completeness.
+Recent Trends in problem solving paradigms using recent searching and sorting techniques by
+applying recently proposed data structures.
+REFERENCES:
+1. Cormen, Leiserson, Rivest, Stein, "Introduction to Algorithms".
+2. Aho,Hopcroft,Ullman "The Design and Analysis of Computer Algorithms".
+3. Kleinberg and Tardos."Algorithm Design".
+ADVANCED COMPUTER ARCHITECTURE (PC - IV)
+M.Tech CSE I Year II Sem. L T P C
+3 0 0 3
+Prerequisites: ComputerOrganization
+Course Objectives:
+1. To impartthe concepts and principles of parallel and advanced computer architectures.
+2. To develop the design techniques of Scalable and multithreaded Architectures.
+3. To Apply the concepts and techniques of parallel and advanced computer
+architectures to design modern computer systems
+Course Outcomes: Gain knowledge of
+1. Apply models of parallelism, program partitioning, and scheduling techniques to optimize
+execution in distributed and high-performance systems.
+2. Analyze performance metrics, speedup laws, and scalability approaches to evaluate the
+efficiency of parallel systems.
+3. Implement shared-memory architectures, pipelining, and superscalar designs to improve
+throughput in modern processors.
+4. Evaluate interconnection networks, cache coherence, and synchronization mechanisms for reliable
+multiprocessor and multicomputer systems.
+5. Design vector and SIMD architectures to support advanced applications in machine learning,
+graphics, and scientific simulations.
+UNIT - I
+Theory of Parallelism, Parallel computer models, The State of Computing, Multiprocessors and
+Multicomputers, Multivector and SIMD Computers, PRAM and VLSI models, Architectural
+development tracks, Program and network properties, Conditions of parallelism, Program
+partitioning and Scheduling, Program flow Mechanisms, System interconnect Architectures.
+UNIT - II
+Principles of Scalable performance, Performance metrics and measures, Parallel Processing
+applications, Speed up performance laws, Scalability Analysis and Approaches, Hardware
+Technologies, Processes and Memory Hierarchy, Advanced Processor Technology, Superscalar and
+Vector Processors
+UNIT - III
+Shared-Memory Organizations, Sequential and weak consistency models, Pipelining and superscalar
+techniques, Linear Pipeline Processors, Non-Linear Pipeline Processors, Instruction Pipeline design,
+Arithmetic pipeline design, superscalar pipeline design.
+UNIT - IV
+Parallel and Scalable Architectures, Multiprocessors and Multicomputers, Multiprocessor system
+interconnects, cache coherence and synchronization mechanism, Three Generations of
+Multicomputers, Message-passing Mechanisms, Multivetor and SIMD computers.
+UNIT - V
+Vector Processing Principles, Multivector Multiprocessors, Compound Vector processing, SIMD
+computer Organizations, The connection machine CM-5.
+Department of Computer Science and Engineering
+Marri Laxman Reddy Institute of Technology and Management-UGC Autonomous
+TEXT BOOK:
+1. Advanced Computer Architecture, Kai Hwang, 2
+nd Edition, Tata McGraw Hill Publishers.
+REFERENCES:
+1. Computer Architecture,J.L. Hennessy andD.A. Patterson, 4
+th Edition, ELSEVIER.
+2. Advanced Computer Architectures, S.G.Shiva, Special Indian edition, CRC, Taylor &Francis.
+3. Introduction to High Performance Computing for Scientists and Engineers, G. Hager and
+G. Wellein, CRC Press, Taylor & Francis Group.
+4. Advanced Computer Architecture, D. Sima, T. Fountain, P. Kacsuk, Pearson education.
+5. Computer Architecture, B. Parhami,Oxford Univ. Press.
+CYBER SECURITY (PROFESSIONAL ELECTIVE - III)
+M.Tech CSE I YearII Sem. L T P C
+3 0 0 3
+Course objectives:
+1. To understand varioustypes of cyber-attacks and cyber-crimes
+2. To learn threats and risks within context of the cyber security
+3. To have an overview of the cyber laws & concepts of cyber forensics
+4. To study the defensive techniques againstthese attacks
+Course Outcomes:
+1. Design cyber security concepts and threat models forsecure communication systems in
+protecting organizational assets.
+2. Analyze cyber laws, policies, and digital forensic techniques to investigate cybercrimes in
+preserving admissible digital evidence.
+3. Evaluate mobile and wireless device vulnerabilitiesto recommend effective authentication and
+security policies in enterprise environments.
+4. Examine organizational implications of cyber threats to formulate strategies mitigating risksin
+web services,social media, and intellectual property.
+5. Develop privacy-preserving solutions and policies forsensitive domains such as healthcare and
+financial systems through real-world case analysis.
+UNIT -I
+Introduction to Cyber Security: Basic Cyber Security Concepts, layers of security, Vulnerability,
+threat, Harmful acts, Internet Governance – Challenges and Constraints, Computer Criminals, CIA
+Triad, Assets and Threat, motive of attackers, active attacks, passive attacks, Software attacks,
+hardware attacks, Cyber Threats-Cyber Warfare, Cyber Crime, Cyber terrorism, Cyber Espionage, etc.,
+Comprehensive Cyber Security Policy.
+UNIT - II
+Cyberspace and the Law & Cyber Forensics: Introduction, Cyber Security Regulations, Roles of
+International Law. The INDIAN Cyberspace, National Cyber Security Policy.
+Introduction, Historical background of Cyber forensics, Digital Forensics Science, The Need for
+Computer Forensics, Cyber Forensics and Digital evidence, Forensics Analysis of Email, Digital
+Forensics Lifecycle, Forensics Investigation, Challenges in Computer Forensics
+UNIT - III
+Cybercrime: Mobile and Wireless Devices: Introduction, Proliferation of Mobile and Wireless
+Devices, Trends in Mobility, Credit card Frauds in Mobile and Wireless Computing Era, Security
+Challenges Posed by Mobile Devices, Registry Settings for Mobile Devices, Authentication service
+Security, Attacks on Mobile/Cell Phones, Organizational security Policies and Measures in Mobile
+Computing Era, Laptops.
+UNIT- IV
+Cyber Security: Organizational Implications: Introduction, cost of cybercrimes and IPR issues, web
+threats for organizations, security and privacy implications, social media marketing: security risks and
+perils for organizations, social computing and the associated challenges for organizations
+UNIT - V
+Privacy Issues: Basic Data Privacy Concepts: Fundamental Concepts, Data Privacy Attacks, Data
+linking and profiling, privacy policies and their specifications, privacy policy languages, privacy in
+different domains- medical, financial, etc
+Cybercrime: Examples and Mini-Cases
+Examples: Official Website of Maharashtra Government Hacked, Indian Banks Lose Millions of
+Rupees, Parliament Attack, Pune City Police Bust Nigerian Racket, e-mail spoofing instances.
+Mini-Cases: The Indian Case of online Gambling, An Indian Case of Intellectual Property Crime,
+Financial Frauds in Cyber Domain.
+Department of Computer Science and Engineering
+Marri Laxman Reddy Institute of Technology and Management-UGC Autonomous
+TEXT BOOKS:
+1. Nina Godbole and Sunit Belpure, Cyber Security Understanding Cyber Crimes,
+Computer Forensics and Legal Perspectives, Wiley
+2. B.B. Gupta, D.P. Agrawal, Haoxiang Wang, Computer and Cyber Security:
+Principles, Algorithm, Applications, and Perspectives, CRC Press, ISBN
+9780815371335,2018.
+REFERENCES:
+1. Cyber Security Essentials, James Graham, Richard Howard and Ryan Otson, CRC Press.
+2. Introduction to Cyber Security, Chwan-Hwa(john) Wu,J. David Irwin, CRC Press T&FGroup.
+ROBOTIC PROCESS AUTOMATION (PROFESSIONAL ELECTIVE - IV)
+M.Tech CSE I YearII Sem. L T P C
+3 0 0 3
+Course Objectives:
+Aim of the course isto make learnersfamiliar with the concepts of Robotic Process Automation.
+Course Outcomes:
+1. Apply RPA concepts and Automation Anywhere features for automating repetitive business
+processes.
+2. Analyze web control room components to manage enterprise-level automation tasks effectively.
+3. Evaluate device pools, workloads, and administration settings to ensure secure, scalable, and
+efficient deployment of RPA solutions in organizations.
+4. Distinguish recording tools and command librariesto optimize task automation in real-world
+scenarios.
+5. Create advanced automation workflows using object cloning, error handling, PDF/FTP/PGP
+integration, and workflow designers for end-to-end digital transformation.
+Unit I
+Introduction to Robotic Process Automation & Bot Creation Introduction to RPA and Use cases –
+Automation Anywhere Enterprise Platform – Advanced features and capabilities – Ways to create
+Bots
+Unit II
+Web Control Room and Client Introduction - Features Panel - Dashboard (Home, Bots, Devices,
+Audit, Workload, Insights) - Features Panel – Activity (View Tasks in Progress and Scheduled Tasks)
+- Bots(View Bots Uploaded and Credentials)
+Unit III
+Devices (View Development and Runtime Clients and Device Pools) - Workload (Queues and SLA
+Calculator) - Audit Log (View Activities Logged which are associated with Web CR) - Administration
+(Configure Settings, Users, Roles, License and Migration) - Demo of Exposed API’s – Conclusion –
+Client introduction and Conclusion.
+Unit IV
+Bot Creator Introduction – Recorders – Smart Recorders – Web Recorders – Screen Recorders - Task
+Editor – Variables - Command Library – Loop Command – Excel Command – Database Command -
+String Operation Command - XML Command
+Unit V
+Terminal Emulator Command - PDF Integration Command - FTP Command - PGP Command - Object
+Cloning Command - Error Handling Command - Manage Windows Control Command - Workflow
+Designer - Report Designer
+TEXT BOOKS:
+1. Learning Robotic Process Automation: Create Software robots and automate business
+processes with the leading RPA tool - UiPath: Create Software robots. with the leading
+RPA tool – UiPath Kindle Edition.
+REFERENCES:
+1. Robotic Process Automation A Complete Guide - 2020 Edition Kindle Edition.
