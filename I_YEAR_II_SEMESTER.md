@@ -61,25 +61,6 @@ Matrix Computations:
 Strassen's algorithm and introduction to divide and conquer paradigm, inverse of a triangular matrix,
 relation between the time complexities of basic matrix operations, LUP-decomposition.
 
-### UNIT - IV
-
-Shortest Path in Graphs:
-Floyd-Warshall algorithm and introduction to dynamic programming paradigm. More examples of
-dynamic programming.
-Modulo Representation of integers/polynomials:
-Chinese Remainder Theorem, Conversion between base-representation and modulo-representation.
-Extension to polynomials. Application: Interpolation problem.
-Discrete Fourier Transform (DFT):
-In complex field, DFT in modulo ring. Fast Fourier Transform algorithm. Schonhage-Strassen Integer
-Multiplication algorithm.
-
-### UNIT - V
-
-Linear Programming: Geometry of the feasibility region and Simplex algorithm
-NP-completeness: Examples, proof of NP-hardness and NP-completeness.
-Recent Trends in problem solving paradigms using recent searching and sorting techniques by
-applying recently proposed data structures.
-
 #### REFERENCES:
 
 1. Cormen, Leiserson, Rivest, Stein, "Introduction to Algorithms".
@@ -133,17 +114,6 @@ Vector Processors
 Shared-Memory Organizations, Sequential and weak consistency models, Pipelining and superscalar
 techniques, Linear Pipeline Processors, Non-Linear Pipeline Processors, Instruction Pipeline design,
 Arithmetic pipeline design, superscalar pipeline design.
-
-### UNIT - IV
-
-Parallel and Scalable Architectures, Multiprocessors and Multicomputers, Multiprocessor system
-interconnects, cache coherence and synchronization mechanism, Three Generations of
-Multicomputers, Message-passing Mechanisms, Multivetor and SIMD computers.
-
-### UNIT - V
-
-Vector Processing Principles, Multivector Multiprocessors, Compound Vector processing, SIMD
-computer Organizations, The connection machine CM-5.
 
 #### TEXT BOOK:
 
@@ -208,23 +178,6 @@ Challenges Posed by Mobile Devices, Registry Settings for Mobile Devices, Authen
 Security, Attacks on Mobile/Cell Phones, Organizational security Policies and Measures in Mobile
 Computing Era, Laptops.
 
-### UNIT- IV
-
-Cyber Security: Organizational Implications: Introduction, cost of cybercrimes and IPR issues, web
-threats for organizations, security and privacy implications, social media marketing: security risks and
-perils for organizations, social computing and the associated challenges for organizations
-
-### UNIT - V
-
-Privacy Issues: Basic Data Privacy Concepts: Fundamental Concepts, Data Privacy Attacks, Data
-linking and profiling, privacy policies and their specifications, privacy policy languages, privacy in
-different domains- medical, financial, etc
-Cybercrime: Examples and Mini-Cases
-Examples: Official Website of Maharashtra Government Hacked, Indian Banks Lose Millions of
-Rupees, Parliament Attack, Pune City Police Bust Nigerian Racket, e-mail spoofing instances.
-Mini-Cases: The Indian Case of online Gambling, An Indian Case of Intellectual Property Crime,
-Financial Frauds in Cyber Domain.
-
 #### TEXT BOOKS:
 
 1. Nina Godbole and Sunit Belpure, Cyber Security Understanding Cyber Crimes,
@@ -279,18 +232,6 @@ Devices (View Development and Runtime Clients and Device Pools) - Workload (Queu
 Calculator) - Audit Log (View Activities Logged which are associated with Web CR) - Administration
 (Configure Settings, Users, Roles, License and Migration) - Demo of Exposed API’s – Conclusion –
 Client introduction and Conclusion.
-
-### Unit IV
-
-Bot Creator Introduction – Recorders – Smart Recorders – Web Recorders – Screen Recorders - Task
-Editor – Variables - Command Library – Loop Command – Excel Command – Database Command -
-String Operation Command - XML Command
-
-### Unit V
-
-Terminal Emulator Command - PDF Integration Command - FTP Command - PGP Command - Object
-Cloning Command - Error Handling Command - Manage Windows Control Command - Workflow
-Designer - Report Designer
 
 #### TEXT BOOKS:
 
