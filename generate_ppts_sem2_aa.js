@@ -1,4 +1,5 @@
 const pptxgen = require("pptxgenjs");
+const { convertToPdf } = require("./pdf_converter");
 const fs = require("fs");
 
 const LOGO = "image/png;base64," + fs.readFileSync("image1.png").toString("base64");
@@ -250,6 +251,7 @@ async function ppt1() {
   const tySl = thankYouSlide(p, H);
   tySl.addNotes("In conclusion, strongly connected components are a fundamental concept for analyzing directed graph connectivity. Algorithms like Kosaraju's and Tarjan's allow us to partition complex networks and detect cycles in O(V + E) time. Thank you for your time, and I am happy to take any questions.");
   await p.writeFile({ fileName: "./outputs/Sem2_AA_Unit1_SCC.pptx" });
+  convertToPdf("./outputs/Sem2_AA_Unit1_SCC.pptx");
   console.log("✔  AA Unit 1 PPT generated");
 }
 
@@ -395,6 +397,7 @@ async function ppt2() {
   const tySl = thankYouSlide(p, H);
   tySl.addNotes("In conclusion, matroids provide the theoretical foundation that guarantees when greedy algorithms will find globally optimal solutions. By recognizing matroid properties in graph structures, scheduling problems, and vector spaces, we can design simple and highly efficient algorithms. Thank you for your attention, and I am ready to answer any questions.");
   await p.writeFile({ fileName: "./outputs/Sem2_AA_Unit2_Matroids.pptx" });
+  convertToPdf("./outputs/Sem2_AA_Unit2_Matroids.pptx");
   console.log("✔  AA Unit 2 PPT generated");
 }
 
@@ -535,6 +538,7 @@ async function ppt3() {
   const tySl = thankYouSlide(p, H);
   tySl.addNotes("In conclusion, the Maxflow-Mincut theorem is a powerful optimization duality that guarantees the correctness of flow algorithms. From network routing to image processing, modeling systems as flow networks provides elegant and efficient solutions to complex problems. Thank you for your time, and I am happy to take any questions.");
   await p.writeFile({ fileName: "./outputs/Sem2_AA_Unit3_Maxflow.pptx" });
+  convertToPdf("./outputs/Sem2_AA_Unit3_Maxflow.pptx");
   console.log("✔  AA Unit 3 PPT generated");
 }
 

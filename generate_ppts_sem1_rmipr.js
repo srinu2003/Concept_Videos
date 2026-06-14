@@ -1,4 +1,5 @@
 const pptxgen = require("pptxgenjs");
+const { convertToPdf } = require("./pdf_converter");
 const fs = require("fs");
 
 const LOGO = "image/png;base64," + fs.readFileSync("image1.png").toString("base64");
@@ -247,6 +248,7 @@ async function ppt1() {
   const tySl = thankYouSlide(p, H);
   tySl.addNotes("In conclusion, formulating a clear and bounded research problem is the foundation of the scientific method. By avoiding common selection errors and following a systematic investigation flow, researchers can generate high-value, reproducible solutions that advance both science and industry. Thank you for your time, and I am happy to take any questions.");
   await p.writeFile({ fileName: "./outputs/Sem1_RMIPR_Unit1_Research_Problem.pptx" });
+  convertToPdf("./outputs/Sem1_RMIPR_Unit1_Research_Problem.pptx");
   console.log("✔  RMIPR Unit 1 PPT generated");
 }
 
@@ -386,6 +388,7 @@ async function ppt2() {
   const tySl = thankYouSlide(p, H);
   tySl.addNotes("In conclusion, conducting a systematic literature review and maintaining strict ethical standards are essential for the credibility of scientific research. By preventing plagiarism and avoiding scientific misconduct, we protect the integrity of the academic record. Thank you for your attention, and I am ready to answer any questions.");
   await p.writeFile({ fileName: "./outputs/Sem1_RMIPR_Unit2_Literature_Ethics.pptx" });
+  convertToPdf("./outputs/Sem1_RMIPR_Unit2_Literature_Ethics.pptx");
   console.log("✔  RMIPR Unit 2 PPT generated");
 }
 
@@ -542,6 +545,7 @@ async function ppt3() {
   const tySl = thankYouSlide(p, H);
   tySl.addNotes("In conclusion, a well-structured research proposal is essential for defining a clear research plan and securing funding and approvals. By adhering to technical writing and citation standards, we ensure that our research plan is clear, professional, and feasible. Thank you for your time, and I am ready to take any questions.");
   await p.writeFile({ fileName: "./outputs/Sem1_RMIPR_Unit3_Research_Proposal.pptx" });
+  convertToPdf("./outputs/Sem1_RMIPR_Unit3_Research_Proposal.pptx");
   console.log("✔  RMIPR Unit 3 PPT generated");
 }
 
@@ -686,6 +690,7 @@ async function ppt4() {
   const tySl = thankYouSlide(p, H);
   tySl.addNotes("In conclusion, intellectual property rights protect creative and technical innovations, driving economic growth and scientific progress. By understanding patentability criteria and utilizing international filing systems like the PCT, inventors can secure their designs globally. Thank you for your time, and I am happy to answer any questions.");
   await p.writeFile({ fileName: "./outputs/Sem1_RMIPR_Unit4_IPR_Nature.pptx" });
+  convertToPdf("./outputs/Sem1_RMIPR_Unit4_IPR_Nature.pptx");
   console.log("✔  RMIPR Unit 4 PPT generated");
 }
 
@@ -826,6 +831,7 @@ async function ppt5() {
   const tySl = thankYouSlide(p, H);
   tySl.addNotes("In conclusion, technology transfer and patent rights are vital for moving research from labs into the real world. By understanding geographical indications and defending traditional knowledge, we protect local and historical innovations in a globalized economy. Thank you for your time, and I am ready to answer your questions.");
   await p.writeFile({ fileName: "./outputs/Sem1_RMIPR_Unit5_Tech_Transfer.pptx" });
+  convertToPdf("./outputs/Sem1_RMIPR_Unit5_Tech_Transfer.pptx");
   console.log("✔  RMIPR Unit 5 PPT generated");
 }
 

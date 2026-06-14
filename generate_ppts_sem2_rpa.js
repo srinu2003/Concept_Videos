@@ -1,4 +1,5 @@
 const pptxgen = require("pptxgenjs");
+const { convertToPdf } = require("./pdf_converter");
 const fs = require("fs");
 
 const LOGO = "image/png;base64," + fs.readFileSync("image1.png").toString("base64");
@@ -230,6 +231,7 @@ async function ppt1() {
   const tySl = thankYouSlide(p, H);
   tySl.addNotes("That brings me to the end of this presentation. In summary, RPA bot creation enables organizations to automate repetitive data entry, transfer information between disconnected software applications, and achieve massive efficiency gains with minimal integration overhead. Thank you so much for your time. I am now open to any questions you might have.");
   await p.writeFile({ fileName: "./outputs/Sem2_RPA_Unit1_Bot_Creation.pptx" });
+  convertToPdf("./outputs/Sem2_RPA_Unit1_Bot_Creation.pptx");
   console.log("✔  RPA Unit 1 PPT generated");
 }
 
@@ -342,6 +344,7 @@ async function ppt2() {
   const tySl = thankYouSlide(p, H);
   tySl.addNotes("To wrap up, the Web Control Room serves as the centralized command center that makes enterprise RPA secure, auditable, and scalable. By managing bots, devices, and credentials from a single web interface, administrators can ensure high availability and compliance across the platform. Thank you for your time, and I am ready to answer any questions.");
   await p.writeFile({ fileName: "./outputs/Sem2_RPA_Unit2_Control_Room.pptx" });
+  convertToPdf("./outputs/Sem2_RPA_Unit2_Control_Room.pptx");
   console.log("✔  RPA Unit 2 PPT generated");
 }
 
@@ -457,6 +460,7 @@ async function ppt3() {
   const tySl = thankYouSlide(p, H);
   tySl.addNotes("In conclusion, robust device pooling, workload management, and role-based administration are the keys to running a secure and scalable RPA platform in any major enterprise. These tools ensure that automation remains high-performing, auditable, and compliant. Thank you for your attention, and I welcome your questions.");
   await p.writeFile({ fileName: "./outputs/Sem2_RPA_Unit3_Administration.pptx" });
+  convertToPdf("./outputs/Sem2_RPA_Unit3_Administration.pptx");
   console.log("✔  RPA Unit 3 PPT generated");
 }
 

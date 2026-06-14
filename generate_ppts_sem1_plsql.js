@@ -1,4 +1,5 @@
 const pptxgen = require("pptxgenjs");
+const { convertToPdf } = require("./pdf_converter");
 const fs = require("fs");
 
 const LOGO = "image/png;base64," + fs.readFileSync("image1.png").toString("base64");
@@ -293,7 +294,8 @@ async function ppt1() {
   s7.addNotes("That brings me to the end of this presentation on PL/SQL Block Structure and Variables. We have seen how combining SQL with procedural logic under structured blocks makes database applications highly efficient, secure, and resilient. I would like to thank the Department of Computer Science and Engineering at the Marri Laxman Reddy Institute of Technology and Management. Thank you all for your attention.");
 
   await p.writeFile({ fileName: "./outputs/Sem1_PLSQL_Unit1_Blocks_Variables.pptx" });
-  console.log("✔  PL/SQL Unit 1 PPT generated");
+  convertToPdf("./outputs/Sem1_PLSQL_Unit1_Blocks_Variables.pptx");
+  console.log("✔  PLSQL Unit 1 PPT generated");
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -490,7 +492,8 @@ async function ppt2() {
   s7.addNotes("That concludes my presentation on Oracle Collections and Arrays. We have seen how using Varrays, Nested Tables, and Associative Arrays, combined with bulk operations, dramatically increases data processing efficiency. I want to thank the Department of Computer Science and Engineering at the Marri Laxman Reddy Institute of Technology and Management. Thank you all for your attention.");
 
   await p.writeFile({ fileName: "./outputs/Sem1_PLSQL_Unit2_Collections.pptx" });
-  console.log("✔  PL/SQL Unit 2 PPT generated");
+  convertToPdf("./outputs/Sem1_PLSQL_Unit2_Collections.pptx");
+  console.log("✔  PLSQL Unit 2 PPT generated");
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -658,7 +661,8 @@ async function ppt3() {
   s7.addNotes("That concludes my presentation on Functions and Procedures in PL/SQL. We have seen how stored subprograms enhance modularity, optimize performance, and secure transactions at the database level. I would like to thank the Department of Computer Science and Engineering at the Marri Laxman Reddy Institute of Technology and Management. Thank you for your time.");
 
   await p.writeFile({ fileName: "./outputs/Sem1_PLSQL_Unit3_Subprograms.pptx" });
-  console.log("✔  PL/SQL Unit 3 PPT generated");
+  convertToPdf("./outputs/Sem1_PLSQL_Unit3_Subprograms.pptx");
+  console.log("✔  PLSQL Unit 3 PPT generated");
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -797,7 +801,8 @@ async function ppt4() {
   s6.addNotes("That brings me to the end of my presentation on PL/SQL Packages. We have seen how packaging related components improves modularity, security, and performance. I would like to express my sincere gratitude to the Department of Computer Science and Engineering at the Marri Laxman Reddy Institute of Technology and Management for this opportunity. Thank you all for your time and attention.");
 
   await p.writeFile({ fileName: "./outputs/Sem1_PLSQL_Unit4_Packages.pptx" });
-  console.log("✔  PL/SQL Unit 4 PPT generated");
+  convertToPdf("./outputs/Sem1_PLSQL_Unit4_Packages.pptx");
+  console.log("✔  PLSQL Unit 4 PPT generated");
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -942,7 +947,8 @@ async function ppt5() {
   s6.addNotes("That concludes my presentation on Database Triggers. We have learned how triggers enforce security, audit changes, and ensure integrity implicitly. I would like to thank the Department of Computer Science and Engineering at the Marri Laxman Reddy Institute of Technology and Management. Thank you very much for your attention.");
 
   await p.writeFile({ fileName: "./outputs/Sem1_PLSQL_Unit5_Triggers.pptx" });
-  console.log("✔  PL/SQL Unit 5 PPT generated");
+  convertToPdf("./outputs/Sem1_PLSQL_Unit5_Triggers.pptx");
+  console.log("✔  PLSQL Unit 5 PPT generated");
 }
 
 // ─────────────────────────────────────────────────────────────

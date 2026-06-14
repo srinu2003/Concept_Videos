@@ -1,4 +1,5 @@
 const pptxgen = require("pptxgenjs");
+const { convertToPdf } = require("./pdf_converter");
 const fs = require("fs");
 
 const LOGO = "image/png;base64," + fs.readFileSync("image1.png").toString("base64");
@@ -274,6 +275,7 @@ async function ppt1() {
   s6.addNotes("That brings me to the end of this presentation on Software Quality Frameworks and ISO-9126. We have seen how defining, measuring, and applying quality models helps build more reliable and maintainable systems. I would like to thank the Department of Computer Science and Engineering at the Marri Laxman Reddy Institute of Technology and Management for this opportunity. Thank you everyone for your time and attention.");
 
   await p.writeFile({ fileName: "./outputs/Sem1_SQE_Unit1_Quality_Frameworks.pptx" });
+  convertToPdf("./outputs/Sem1_SQE_Unit1_Quality_Frameworks.pptx");
   console.log("✔  SQE Unit 1 PPT generated");
 }
 
@@ -439,6 +441,7 @@ async function ppt2() {
   s7.addNotes("That concludes my presentation on Defect Prevention, Reduction, and Containment. By structuring our QA strategy across these three layers, we minimize costs, maximize quality, and ensure production resilience. I want to thank the Department of Computer Science and Engineering at the Marri Laxman Reddy Institute of Technology and Management for this opportunity. Thank you all for your attention.");
 
   await p.writeFile({ fileName: "./outputs/Sem1_SQE_Unit2_QA_Dealing_Defects.pptx" });
+  convertToPdf("./outputs/Sem1_SQE_Unit2_QA_Dealing_Defects.pptx");
   console.log("✔  SQE Unit 2 PPT generated");
 }
 
@@ -581,6 +584,7 @@ async function ppt3() {
   s6.addNotes("That concludes my presentation on Quality Planning and Goal Setting. By using systematic models like GQM, software teams align their quality metrics directly with business and user needs, driving continuous improvement. I would like to thank the Department of Computer Science and Engineering at the Marri Laxman Reddy Institute of Technology and Management. Thank you for your time.");
 
   await p.writeFile({ fileName: "./outputs/Sem1_SQE_Unit3_Quality_Planning.pptx" });
+  convertToPdf("./outputs/Sem1_SQE_Unit3_Quality_Planning.pptx");
   console.log("✔  SQE Unit 3 PPT generated");
 }
 
@@ -726,6 +730,7 @@ async function ppt4() {
   s6.addNotes("That brings me to the end of my presentation on Software Test Automation. We have seen how structuring test activities and selectively automating them helps teams deliver reliable, high-performance software at scale. I want to thank the Department of Computer Science and Engineering at the Marri Laxman Reddy Institute of Technology and Management. Thank you for your time.");
 
   await p.writeFile({ fileName: "./outputs/Sem1_SQE_Unit4_Test_Automation.pptx" });
+  convertToPdf("./outputs/Sem1_SQE_Unit4_Test_Automation.pptx");
   console.log("✔  SQE Unit 4 PPT generated");
 }
 
@@ -912,6 +917,7 @@ async function ppt5() {
   s6.addNotes("That concludes my presentation on Usage-Based Statistical Testing. By prioritizing software paths based on real user behavior and combining probability with risk, organizations achieve high reliability and maximize the return on their testing investments. I want to thank the Department of Computer Science and Engineering at the Marri Laxman Reddy Institute of Technology and Management. Thank you for your time.");
 
   await p.writeFile({ fileName: "./outputs/Sem1_SQE_Unit5_Usage_Testing.pptx" });
+  convertToPdf("./outputs/Sem1_SQE_Unit5_Usage_Testing.pptx");
   console.log("✔  SQE Unit 5 PPT generated");
 }
 

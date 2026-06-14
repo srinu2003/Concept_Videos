@@ -1,4 +1,5 @@
 const pptxgen = require("pptxgenjs");
+const { convertToPdf } = require("./pdf_converter");
 const fs = require("fs");
 
 const LOGO = "image/png;base64," + fs.readFileSync("image1.png").toString("base64");
@@ -370,6 +371,7 @@ async function ppt1() {
 
   thankYouSlide(p, H);
   await p.writeFile({ fileName: "./outputs/PPT1_Unit1_Propositional_Logic.pptx" });
+  convertToPdf("./outputs/PPT1_Unit1_Propositional_Logic.pptx");
   console.log("✔  PPT1 written");
 }
 
@@ -651,6 +653,7 @@ async function ppt2() {
 
   thankYouSlide(p, H);
   await p.writeFile({ fileName: "./outputs/PPT2_Unit2_Relations_Properties.pptx" });
+  convertToPdf("./outputs/PPT2_Unit2_Relations_Properties.pptx");
   console.log("✔  PPT2 written");
 }
 
@@ -932,6 +935,7 @@ async function ppt3() {
 
   thankYouSlide(p, H);
   await p.writeFile({ fileName: "./outputs/PPT3_Unit3_Mathematical_Induction.pptx" });
+  convertToPdf("./outputs/PPT3_Unit3_Mathematical_Induction.pptx");
   console.log("✔  PPT3 written");
 }
 
@@ -1191,6 +1195,7 @@ async function ppt4() {
 
   thankYouSlide(p, H);
   await p.writeFile({ fileName: "./outputs/PPT4_Unit4_Bayes_Theorem.pptx" });
+  convertToPdf("./outputs/PPT4_Unit4_Bayes_Theorem.pptx");
   console.log("✔  PPT4 written");
 }
 
@@ -1248,8 +1253,15 @@ async function ppt5() {
     // Edges as lines
     for (let i = 0; i < 3; i++) {
       const a = verts[i], b = verts[(i + 1) % 3];
-      s.addShape(p.shapes.LINE,
-        { x: a.x, y: a.y, w: b.x - a.x, h: b.y - a.y, line: { color: "333333", width: 2.5 } });
+      const lx = Math.min(a.x, b.x);
+      const ly = Math.min(a.y, b.y);
+      const lw = Math.abs(a.x - b.x);
+      const lh = Math.abs(a.y - b.y);
+      const opts = { x: lx, y: ly, w: lw || 0.01, h: lh || 0.01, line: { color: "333333", width: 2.5 } };
+      if ((a.x < b.x && a.y > b.y) || (a.x > b.x && a.y < b.y)) {
+        opts.flipH = true;
+      }
+      s.addShape(p.shapes.LINE, opts);
     }
     // Vertex circles + labels
     verts.forEach(v => {
@@ -1521,6 +1533,7 @@ async function ppt5() {
 
   thankYouSlide(p, H);
   await p.writeFile({ fileName: "./outputs/PPT5_Unit5_Graph_Coloring.pptx" });
+  convertToPdf("./outputs/PPT5_Unit5_Graph_Coloring.pptx");
   console.log("✔  PPT5 written");
 }
 

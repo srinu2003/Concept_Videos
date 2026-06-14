@@ -1,4 +1,5 @@
 const pptxgen = require("pptxgenjs");
+const { convertToPdf } = require("./pdf_converter");
 const fs = require("fs");
 
 const LOGO = "image/png;base64," + fs.readFileSync("image1.png").toString("base64");
@@ -289,6 +290,7 @@ async function ppt1() {
 
   thankYouSlide(p, H);
   await p.writeFile({ fileName: "./outputs/Sem1_ADS_Unit1_Fibonacci_Heaps.pptx" });
+  convertToPdf("./outputs/Sem1_ADS_Unit1_Fibonacci_Heaps.pptx");
   console.log("✔  ADS Unit 1 PPT generated");
 }
 
@@ -468,6 +470,7 @@ async function ppt2() {
 
   thankYouSlide(p, H);
   await p.writeFile({ fileName: "./outputs/Sem1_ADS_Unit2_Collision_Hashing.pptx" });
+  convertToPdf("./outputs/Sem1_ADS_Unit2_Collision_Hashing.pptx");
   console.log("✔  ADS Unit 2 PPT generated");
 }
 
@@ -636,6 +639,7 @@ async function ppt3() {
 
   thankYouSlide(p, H);
   await p.writeFile({ fileName: "./outputs/Sem1_ADS_Unit3_AVL_Trees.pptx" });
+  convertToPdf("./outputs/Sem1_ADS_Unit3_AVL_Trees.pptx");
   console.log("✔  ADS Unit 3 PPT generated");
 }
 
@@ -806,6 +810,7 @@ async function ppt4() {
 
   thankYouSlide(p, H);
   await p.writeFile({ fileName: "./outputs/Sem1_ADS_Unit4_Tries.pptx" });
+  convertToPdf("./outputs/Sem1_ADS_Unit4_Tries.pptx");
   console.log("✔  ADS Unit 4 PPT generated");
 }
 
@@ -998,6 +1003,7 @@ async function ppt5() {
 
   thankYouSlide(p, H);
   await p.writeFile({ fileName: "./outputs/Sem1_ADS_Unit5_KMP_Algorithm.pptx" });
+  convertToPdf("./outputs/Sem1_ADS_Unit5_KMP_Algorithm.pptx");
   console.log("✔  ADS Unit 5 PPT generated");
 }
 

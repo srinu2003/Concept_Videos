@@ -1,4 +1,5 @@
 const pptxgen = require("pptxgenjs");
+const { convertToPdf } = require("./pdf_converter");
 const fs = require("fs");
 
 const LOGO = "image/png;base64," + fs.readFileSync("image1.png").toString("base64");
@@ -267,6 +268,7 @@ async function ppt1() {
   const tySl = thankYouSlide(p, H);
   tySl.addNotes("In conclusion, understanding the CIA Triad and the nature of active and passive threat vectors is critical to establishing robust security defenses in modern organizations. By implementing a defense-in-depth approach, we can safeguard our digital assets against evolving threat landscapes. Thank you so much for your time and attention. I am now open to any questions you might have.");
   await p.writeFile({ fileName: "./outputs/Sem2_CS_Unit1_CIA_Threats.pptx" });
+  convertToPdf("./outputs/Sem2_CS_Unit1_CIA_Threats.pptx");
   console.log("✔  CS Unit 1 PPT generated");
 }
 
@@ -399,6 +401,7 @@ async function ppt2() {
   const tySl = thankYouSlide(p, H);
   tySl.addNotes("To conclude, the digital forensics lifecycle provides a standardized, scientifically sound methodology to recover and analyze digital evidence. By adhering to protocols like chain of custody and hash verification, forensics ensures that digital evidence remains untampered and legally admissible in court. Thank you for your time, and I welcome any questions or discussion on this topic.");
   await p.writeFile({ fileName: "./outputs/Sem2_CS_Unit2_Forensics.pptx" });
+  convertToPdf("./outputs/Sem2_CS_Unit2_Forensics.pptx");
   console.log("✔  CS Unit 2 PPT generated");
 }
 
@@ -511,6 +514,7 @@ async function ppt3() {
   const tySl = thankYouSlide(p, H);
   tySl.addNotes("In summary, securing mobile endpoints requires a multi-layered approach that bridges native operating system sandboxing with centralized enterprise management tools. As mobile devices continue to be the primary interface for business applications, maintaining robust MDM and OS controls is vital to defending against digital threats. Thank you very much for your time. I am now open to any questions you may have.");
   await p.writeFile({ fileName: "./outputs/Sem2_CS_Unit3_Mobile_Security.pptx" });
+  convertToPdf("./outputs/Sem2_CS_Unit3_Mobile_Security.pptx");
   console.log("✔  CS Unit 3 PPT generated");
 }
 

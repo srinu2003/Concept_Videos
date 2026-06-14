@@ -1,4 +1,5 @@
 const pptxgen = require("pptxgenjs");
+const { convertToPdf } = require("./pdf_converter");
 const fs = require("fs");
 
 const LOGO = "image/png;base64," + fs.readFileSync("image1.png").toString("base64");
@@ -266,6 +267,7 @@ async function ppt1() {
   const tySl = thankYouSlide(p, H);
   tySl.addNotes("In conclusion, the theory of parallelism and Bernstein's conditions form the foundation of both hardware design and compiler optimization. By understanding data, control, and resource dependencies, we can design more efficient processors and algorithms that fully exploit modern multicore systems. Thank you for your time. I am now open to any questions you might have.");
   await p.writeFile({ fileName: "./outputs/Sem2_ACA_Unit1_Parallelism.pptx" });
+  convertToPdf("./outputs/Sem2_ACA_Unit1_Parallelism.pptx");
   console.log("✔  ACA Unit 1 PPT generated");
 }
 
@@ -443,6 +445,7 @@ async function ppt2() {
   const tySl = thankYouSlide(p, H);
   tySl.addNotes("In conclusion, both Amdahl's and Gustafson's laws are essential for understanding the limits of parallel system performance. While Amdahl's law warns us of the danger of sequential bottlenecks, Gustafson's law shows that scaling the problem size allows us to exploit massive parallelism effectively. Thank you for your time. I am now open to any questions.");
   await p.writeFile({ fileName: "./outputs/Sem2_ACA_Unit2_Scalability.pptx" });
+  convertToPdf("./outputs/Sem2_ACA_Unit2_Scalability.pptx");
   console.log("✔  ACA Unit 2 PPT generated");
 }
 
@@ -579,6 +582,7 @@ async function ppt3() {
   const tySl = thankYouSlide(p, H);
   tySl.addNotes("In conclusion, linear pipelining is a fundamental technique that dramatically increases processor performance without requiring excessive hardware redundancy. By analyzing pipeline hazards and implementing mitigation strategies like forwarding, branch prediction, and compiler scheduling, computer architects can design high-performance processors. Thank you for your time, and I am ready to answer any questions.");
   await p.writeFile({ fileName: "./outputs/Sem2_ACA_Unit3_Pipelining.pptx" });
+  convertToPdf("./outputs/Sem2_ACA_Unit3_Pipelining.pptx");
   console.log("✔  ACA Unit 3 PPT generated");
 }
 //  MAIN
