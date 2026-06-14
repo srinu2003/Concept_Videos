@@ -1,7 +1,7 @@
 const pptxgen = require("pptxgenjs");
 const fs = require("fs");
 
-const LOGO = "image/png;base64," + fs.readFileSync("SM CAT 3/ppt/media/image1.png").toString("base64");
+const LOGO = "image/png;base64," + fs.readFileSync("image1.png").toString("base64");
 
 // ── Color palette ─────────────────────────────────────────────
 const M   = "990033"; // maroon   (primary / border)
