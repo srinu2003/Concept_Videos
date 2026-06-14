@@ -1,7 +1,7 @@
 const pptxgen = require("pptxgenjs");
 const fs = require("fs");
 
-const LOGO = "image/png;base64," + fs.readFileSync("image1.png").toString("base64");
+const LOGO = "image/png;base64," + fs.readFileSync("SM CAT 3/ppt/media/image1.png").toString("base64");
 
 // ── Color palette ─────────────────────────────────────────────
 const M   = "990033"; // maroon   (primary / border)
@@ -63,10 +63,10 @@ function titleSlide(pres, hdr, unit, topic) {
      align:"center",valign:"middle",fontFace:"Arial",margin:0});
   sl.addText("PPT PRESENTED BY",
     {x:CX,y:3.28,w:CW,h:0.40, fontSize:14,bold:true,color:M,align:"center",fontFace:"Arial"});
-  ["NAME :   ___________________________________________",
-   "ROLL NO :   ___________________________________________",
-   "YEAR :   II Year  I Semester",
-   "ACADEMIC YEAR :   2025 – 2026"
+  ["NAME :   SRinivas Rao Tammireddy",
+   "ROLL NO :   257Y1D5805",
+   "YEAR :   I Year  I Semester",
+   "ACADEMIC YEAR :   2025 - 2026"
   ].forEach((t,i) =>
     sl.addText(t,{x:3.20,y:3.76+i*0.44,w:7.0,h:0.42,fontSize:12,color:BK,fontFace:"Arial"}));
   sl.addText("DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING",
@@ -349,7 +349,7 @@ async function ppt1() {
   }
 
   thankYouSlide(p, H);
-  await p.writeFile({fileName:"/mnt/user-data/outputs/PPT1_Unit1_Propositional_Logic.pptx"});
+  await p.writeFile({fileName:"./outputs/PPT1_Unit1_Propositional_Logic.pptx"});
   console.log("✔  PPT1 written");
 }
 
@@ -618,7 +618,7 @@ async function ppt2() {
   }
 
   thankYouSlide(p, H);
-  await p.writeFile({fileName:"/mnt/user-data/outputs/PPT2_Unit2_Relations_Properties.pptx"});
+  await p.writeFile({fileName:"./outputs/PPT2_Unit2_Relations_Properties.pptx"});
   console.log("✔  PPT2 written");
 }
 
@@ -893,7 +893,7 @@ async function ppt3() {
   }
 
   thankYouSlide(p, H);
-  await p.writeFile({fileName:"/mnt/user-data/outputs/PPT3_Unit3_Mathematical_Induction.pptx"});
+  await p.writeFile({fileName:"./outputs/PPT3_Unit3_Mathematical_Induction.pptx"});
   console.log("✔  PPT3 written");
 }
 
@@ -1134,7 +1134,7 @@ async function ppt4() {
   }
 
   thankYouSlide(p, H);
-  await p.writeFile({fileName:"/mnt/user-data/outputs/PPT4_Unit4_Bayes_Theorem.pptx"});
+  await p.writeFile({fileName:"./outputs/PPT4_Unit4_Bayes_Theorem.pptx"});
   console.log("✔  PPT4 written");
 }
 
@@ -1446,7 +1446,7 @@ async function ppt5() {
   }
 
   thankYouSlide(p, H);
-  await p.writeFile({fileName:"/mnt/user-data/outputs/PPT5_Unit5_Graph_Coloring.pptx"});
+  await p.writeFile({fileName:"./outputs/PPT5_Unit5_Graph_Coloring.pptx"});
   console.log("✔  PPT5 written");
 }
 
@@ -1454,6 +1454,13 @@ async function ppt5() {
 //  MAIN
 // ─────────────────────────────────────────────────────────────
 (async () => {
+  // Create outputs directory if it doesn't exist
+  const outputDir = "./outputs";
+  if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir, { recursive: true });
+    console.log(`Created directory: ${outputDir}`);
+  }
+
   console.log("Generating 5 MFCS PPTs …");
   await ppt1();
   await ppt2();
